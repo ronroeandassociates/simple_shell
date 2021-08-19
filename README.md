@@ -1,7 +1,7 @@
 # 0x17. C - Simple Shell
 
 By Ron Olsen Tofer Sokolosky
-> By Julien Barbier, co-founder & CEO at Holberton School
+> using resources provided by Julien Barbier, co-founder & CEO at Holberton School
 ## Concepts
 For this project, students are expected to look at these concepts:
 
@@ -134,9 +134,9 @@ hsh main.c shell.c test_ls_2
 $
 ```
 ## Tasks
-- [ ] README.md
+- [x] README.md
 - [ ] man_1_simple_shell
-- [ ] AUTHORS
+- [x] AUTHORS
 - [ ] Write a beautiful code that passes the Betty checks
 - [ ] Write a UNIX command line interpreter
 - [ ] Handle command lines with arguments
