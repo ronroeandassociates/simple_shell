@@ -11,6 +11,8 @@
 #include <sys/stat.h>
 #include <errno.h>
 
+char *_getline_command(void);
+
 /**
  * left blank till struct is defined*/
 
