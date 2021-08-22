@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-    int p_id, p_pid;
+	int p_id, p_pid;
 
-    p_id = getpid(); /*process id*/
-    p_pid = getppid(); /*parent process id*/
-    
-    return 0;
+	p_id = getpid(); /*process id*/
+	p_pid = getppid(); /*parent process id*/
+
+	return (0);
 }
