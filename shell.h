@@ -12,7 +12,7 @@
 #include <errno.h>
 
 char *_getline_command(void);
-
+int _fork_func(char **arg, char **av, char **env, char *lineptr, int np, int c)
 /**
  * left blank till struct is defined*/
 
