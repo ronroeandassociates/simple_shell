@@ -14,7 +14,7 @@
 /** command line functions**/
 char *_getline_command(void);
 int _fork_func(char **arg, char **av, char **env, char *lineptr, int np, int c);
-char *pathfinder(char *dir, char *av);
+char *pathfinder(char **env);
 void _exit_command(char **arg, char *lineptr, int _exit);
 void _getenv(char **env);
 /** string functions **/
