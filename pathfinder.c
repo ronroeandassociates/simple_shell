@@ -1,29 +1,30 @@
 #include "shell.h"
 /**
- * pathCat - path function
- * @dir: direction
- * @av: characters
- * Return: always buf
+ * _get_path - get variable PATH.
+ * @env: enviromente local
+ * Return: value of PATH.
  */
-char *pathfinder(char *dir, char *av)
-{
-	int i = 0, k = 0, length = 0, length2 = 0;
-	char *buf;
 
-	length = _stlren(dir);
-	length2 = _stlren(av);
-	buf = malloc(sizeof(char) * length + length2 + 1);
-	while (i < length)
-	{
-		buf[i] = dir[i];
-		i++;
-	}
-	while (i < length + length2)
-	{
-		buf[i] = av[k];
-		i++;
-		k++;
-	}
-	buf[i] = '\0';
-	return (buf);
+char *_get_path(char **env)
+{
+	size_t index = 0, var = 0, count = 5;
+	char *path = NULL;
+
+	for (index = 0; _strncmp(env[index], "PATH=", 5); index++)
+		;
+	if (env[index] == NULL)
+		return (NULL);
+
+	for (count = 5; env[index][var]; var++, count++)
+		;
+	path = malloc(sizeof(char) * (count + 1));
+
+	if (path == NULL)
+		return (NULL);
+
+	for (var = 5, count = 0; env[index][var]; var++, count++)
+		path[count] = env[index][var];
+
+	path[count] = '\0';
+	return (path);
 }
