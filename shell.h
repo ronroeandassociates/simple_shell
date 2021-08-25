@@ -11,12 +11,13 @@
 #include <sys/stat.h>
 #include <errno.h>
 
+/** command line functions**/
 char *_getline_command(void);
 int _fork_func(char **arg, char **av, char **env, char *lineptr, int np, int c);
 char *pathfinder(char *dir, char *av);
 void _exit_command(char **arg, char *lineptr, int _exit);
-
-	/** string functions **/
+void _getenv(char **env);
+/** string functions **/
 size_t _strncmp(char *s1, char *s2, size_t n);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
