@@ -11,6 +11,9 @@
 #include <sys/stat.h>
 #include <errno.h>
 
+#define TOKEN_SIZE 64;
+#define BUFF_SIZE 1024;
+
 /** command line functions**/
 char *_getline_command(void);
 int _fork_func(char **arg, char **av, char **env, char *lineptr, int np, int c);
@@ -23,4 +26,14 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
+<<<<<<< HEAD
 int _value_path(char **arg, char **env)endif
+=======
+char *_strdup(char *str);
+
+
+
+
+
+#endif
+>>>>>>> f6a9dc6d7e12389dccb1b088e1cd128f8777022d
