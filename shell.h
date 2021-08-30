@@ -16,7 +16,7 @@
 
 /** command line functions**/
 char *_getline_command(void);
-int _fork_func(char **arg, char **av, char **env, char *lineptr, int np, int c);
+int _frk_func(char **arg, char **av, char **env, char *lineptr, int np, int c);
 char *pathfinder(char **env);
 void _exit_command(char **arg, char *lineptr, int _exit);
 void _getenv(char **env);
@@ -28,4 +28,6 @@ int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
 int _value_path(char **arg, char **env)
 char *_strdup(char *str);
+char *lineptr(int np, int c);
+char *_strtok(char *str, const char *delim);
 #endif
