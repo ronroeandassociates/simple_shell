@@ -5,7 +5,7 @@
  * Return: To a pointer
  */
 
-char **_get_token(char *lineptr);
+char **_get_token(char *lineptr)
 {
 	char **user_comm = NULL;
 	char *token = NULL;

@@ -6,7 +6,7 @@
  *
  * Return: dest
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int j, k;
 
@@ -32,7 +32,7 @@ char *_strcat(char *dest, char *src);
  *
  * Return: n
  */
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 
@@ -48,7 +48,7 @@ int _strcmp(char *s1, char *s2);
 * @src: string being pointed to
 * Return: dest
 */
-char *_strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src)
 {
 	int k = 0;
 
@@ -66,7 +66,7 @@ char *_strcpy(char *dest, char *src);
  *@s: pointer to the string
  *Return: 0
  */
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int k = 0;
 
@@ -81,7 +81,7 @@ int _strlen(char *s);
  *@n: number of characters
  * Return: diference
  */
-size_t _strncmp(char *s1, char *s2, size_t n);
+size_t _strncmp(char *s1, char *s2, size_t n)
 {
 	size_t i, j;
 

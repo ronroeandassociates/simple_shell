@@ -10,7 +10,7 @@
  *Return: 0 success
  */
 
-int _frk_func(char **arg, char **av, char **env, char *lineptr, int np, int c);
+int _frk_func(char **arg, char **av, char **env, char *lineptr, int np, int c)
 {
 	pid_t child;
 	int status;
