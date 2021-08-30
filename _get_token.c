@@ -5,7 +5,7 @@
  * Return: To a pointer
  */
 
-char **_get_token(char *lineptr)
+char **_get_token(char *lineptr);
 {
 	char **user_comm = NULL;
 	char *token = NULL;
@@ -28,7 +28,7 @@ char **_get_token(char *lineptr)
 	for (i = 0; token != NULL; i++)
 	{
 	user_comm[i] = token;
-												token = _strtok(NULL, " \n\t\r");
+	token = _strtok(NULL, " \n\t\r");
 	}
 	user_comm[i] = NULL;
 			return (user_comm);

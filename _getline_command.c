@@ -4,7 +4,7 @@
  * Return: line of string input for user
  */
 
-char *_getline_command(void)
+char *_getline_command(void);
 {
 	char *lineptr = NULL;
 	size_t shell_user = 0;
