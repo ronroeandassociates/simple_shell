@@ -6,7 +6,7 @@
  * @env: environment
  * Return: _exit = 0.
  */
-int main(int ac, char **av, char **env)
+int main(int ac, char **av, char **env);
 {
 	char *getcommand = NULL, **user_command = NULL;
 	int pathValue = 0, _exit = 0, n = 0;
@@ -24,8 +24,7 @@ int main(int ac, char **av, char **env)
 				free(getcommand);
 				continue;
 			}
-			if (!_strcmp(user_command[0], "exit"))
-				&&user_command[1] == NULL)
+			if ((!_strcmp(user_command[0], "exit") && user_command[1] == NULL)
 				_exit_command(user_command, getcommand _exit);
 			if (!_strcmp(user_command[0], "env"))
 				getenv(env);

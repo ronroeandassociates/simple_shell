@@ -7,7 +7,7 @@
  * @_exit: value of exit
  * Return: None
  */
-void _exit_command(char **arg, char *lineptr, int _exit)
+void _exit_command(char **arg, char *lineptr, int _exit);
 {
 	int exit_status = 0;
 
@@ -29,7 +29,7 @@ void _exit_command(char **arg, char *lineptr, int _exit)
  *Return: 0
  */
 
-void _getenv(char **env)
+void _getenv(char **env);
 {
 	size_t run = 0;
 
