@@ -11,8 +11,8 @@
 #include <sys/stat.h>
 #include <errno.h>
 
-#define TOKEN_SIZE 64;
-#define BUFF_SIZE 1024;
+#define TOKEN_SIZE 64
+#define BUFF_SIZE 1024
 
 /** command line functions**/
 char *_getline_command(void);
