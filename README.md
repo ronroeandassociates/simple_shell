@@ -140,7 +140,7 @@ $
 - [x] Write a beautiful code that passes the Betty checks
 - [x] Write a UNIX command line interpreter
 - [x] Handle command lines with arguments
-- [x] Handle the PATH
+- [ ] Handle the PATH
 - [x] Implement the exit built-in, that exits the shell
 - [x] Implement the env built-in, that prints the current environment
 - [ ] blog post describing step by step what happens when you type ls -l *.c and hit Enter in a shell 
