@@ -25,13 +25,13 @@ int main(int ac, char **av, char **env)
 				continue;
 			}
 			if (!_strcmp(user_command[0], "exit") && user_command[1] == NULL)
-				_exit_command(user_command, getcommand _exit);
+				_exit_command(user_command, getcommand, _exit);
 			if (!_strcmp(user_command[0], "env"))
-				getenv(env);
+				getenv(*env);
 			else
 			{
 				n = _value_path(&user_command[0], env);
-				_exit = _frk_func(user_command, av, env, getcommand, pathValue, n)
+				_exit = _frk_func(user_command, av, env, getcommand, pathValue, n);
 				if (n == 0)
 					free(user_command[0]);
 			}

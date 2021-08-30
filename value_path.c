@@ -16,8 +16,8 @@ int _value_path(char **arg, char **env)
 	path_rela = _get_path(env);
 	if (!path_rela)
 		return (-1);
-	token = _strtok(path_rela, ":");
-command = _strlen(*arg);
+	token = strtok(path_rela, ":");
+	command = _strlen(*arg);
 	while (token)
 	{
 		value_path = _strlen(token);
@@ -37,7 +37,7 @@ command = _strlen(*arg);
 			return (0);
 		}
 		free(path_absol);
-		token = _strtok(NULL, ":");
+		token = strtok(NULL, ":");
 	}
 	free(path_rela);
 	return (-1);
