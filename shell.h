@@ -15,12 +15,12 @@ extern char **environ;
 
 /** command line functions**/
 char *_get_path(char **env);
-int _values_path(char **arg, char **env);
+int _value_path(char **arg, char **env);
 char *_getline_command(void);
 void _getenv(char **env);
 char **_get_token(char *lineptr);
 void _exit_command(char **args, char *lineptr, int _exit);
-int _fork_fun(char **arg, char **av, char **env,
+int _frk_func(char **arg, char **av, char **env,
 char *lineptr, int np, int c);
 /** string functions **/
 int _strcmp(char *s1, char *s2);
