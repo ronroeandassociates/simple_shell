@@ -24,11 +24,11 @@ char **_get_token(char *lineptr);
 	user_comm = malloc(sizeof(char *) * (size + 2));
 	if (user_comm == NULL)
 		return (NULL);
-	token = _strtok(lineptr, " \n\t\r");
+	token = strtok(lineptr, " \n\t\r");
 	for (i = 0; token != NULL; i++)
 	{
 	user_comm[i] = token;
-	token = _strtok(NULL, " \n\t\r");
+	token = strtok(NULL, " \n\t\r");
 	}
 	user_comm[i] = NULL;
 			return (user_comm);

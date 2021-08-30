@@ -5,7 +5,7 @@
  * @env: enviroment.
  * Return:  a pointer to strings.
  */
-int _value_path(char **arg, char **env)
+int _value_path(char **arg, char **env);
 {
 	char *token = NULL, *path_rela = NULL, *path_absol = NULL;
 	size_t value_path, command;

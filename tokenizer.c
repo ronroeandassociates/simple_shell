@@ -5,7 +5,7 @@
  *
  *Return: str or NULL if not enough mem
  */
-char *_strdup(char *str)
+char *_strdup(char *str);
 {
 	char *dup;
 	int i;
@@ -34,7 +34,7 @@ char *_strdup(char *str)
  * Return: token
  *
  */
-char **tokenizer(char *buff, conts char *delim)
+char **tokenizer(char *buff, const char *delim);
 {
 	char **token, *clone = NULL;
 	size_t words = 0;
