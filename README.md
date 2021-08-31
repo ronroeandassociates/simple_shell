@@ -135,12 +135,12 @@ $
 ```
 ## Tasks
 - [x] README.md
-- [ ] man\_1\_simple\_shell
+- [x] man\_1\_simple\_shell
 - [x] AUTHORS
 - [x] Write a beautiful code that passes the Betty checks
 - [x] Write a UNIX command line interpreter
 - [x] Handle command lines with arguments
 - [ ] Handle the PATH
 - [x] Implement the exit built-in, that exits the shell
-- [x] Implement the env built-in, that prints the current environment
+- [ ] Implement the env built-in, that prints the current environment
 - [ ] blog post describing step by step what happens when you type ls -l *.c and hit Enter in a shell 
