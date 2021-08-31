@@ -27,7 +27,7 @@ int main(int ac, char **av, char **env)
 			if (!_strcmp(user_command[0], "exit") && user_command[1] == NULL)
 				_exit_command(user_command, getcommand, _exit);
 			if (!_strcmp(user_command[0], "env"))
-				getenv(*env);
+				_getenv(env);
 			else
 			{
 				n = _value_path(&user_command[0], env);
