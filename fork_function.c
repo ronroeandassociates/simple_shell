@@ -16,7 +16,6 @@ int _frk_func(char **arg, char **av, char **env, char *lineptr, int np, int c)
 	int status;
 	char *format = "%s: %d: %s: not found\n";
 
-	
 	child = fork();
 
 	if (child == 0)
