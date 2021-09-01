@@ -106,8 +106,7 @@ $
 - write (man 2 write)
 ## Compilation
 Your shell will be compiled this way:
-``` 
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
 ## Testing
 Your shell should work like this in interactive mode:
@@ -143,4 +142,4 @@ $
 - [x] Handle the PATH
 - [x] Implement the exit built-in, that exits the shell
 - [x] Implement the env built-in, that prints the current environment
-- [x] blog post describing step by step what happens when you type ls -l *.c and hit Enter in a shell 
+- [x] blog post describing step by step what happens when you type ls -l *.c and hit Enter in a sheLL
