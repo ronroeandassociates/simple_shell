@@ -36,6 +36,5 @@ int _frk_func(char **arg, char **av, char **env, char *lineptr, int np, int c)
 		if (WIFEXITED(status) && WEXITSTATUS(status) != 0)
 			return (WEXITSTATUS(status));
 	}
-	free(_frk_func)
 	return (0);
 }
