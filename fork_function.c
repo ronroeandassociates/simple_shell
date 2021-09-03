@@ -18,6 +18,9 @@ int _frk_func(char **arg, char **av, char **env, char *lineptr, int np, int c)
 
 	child = fork();
 
+	if (arg == NULL)
+		exit(errno);
+
 	if (child == 0)
 	{
 		if (execve(arg[0], arg, env) == -1)
