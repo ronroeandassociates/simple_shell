@@ -1,9 +1,10 @@
 H 0.9 "September 2021" "Holberton Tulsa - Cohort 15" "Simple Shell"
 .SH NAME
 .B hsh
+
 - command interpreter (simple shell).
-.SH SYNOPSIS
-hsh [filename]
+  .SH SYNOPSIS
+  hsh [filename]
 
 .SH DESCRIPTION
 .B hsh
@@ -19,7 +20,7 @@ The first non-option argument specified on the command line will be treated as t
 
 .B Commands
 
-The shell interprets the words it reads according to a language, the specification of which is outside the scope of this man page (refer to the BNF in the IEEE Std 1003.2 ("POSIX.2")document). Essentially though, a line is read and if the first word of the line (or after	a control operator) is not a keyword, then the shell has recognized a simple command. Otherwise, a complex command or some other special construct may have been recognized.
+The shell interprets the words it reads according to a language, the specification of which is outside the scope of this man page (refer to the BNF in the IEEE Std 1003.2 ("POSIX.2")document). Essentially though, a line is read and if the first word of the line (or after a control operator) is not a keyword, then the shell has recognized a simple command. Otherwise, a complex command or some other special construct may have been recognized.
 
 .B Search and Execution
 

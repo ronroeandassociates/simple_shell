@@ -16,8 +16,8 @@ char **_get_token(char *lineptr)
 		return (NULL);
 	for (i = 0; lineptr[i]; i++)
 	{
-	if (lineptr[i] == ' ')
-		size++;
+		if (lineptr[i] == ' ')
+			size++;
 	}
 	if ((size + 1) == _strlen(lineptr))
 		return (NULL);
@@ -27,9 +27,9 @@ char **_get_token(char *lineptr)
 	token = strtok(lineptr, " \n\t\r");
 	for (i = 0; token != NULL; i++)
 	{
-	user_comm[i] = token;
-	token = strtok(NULL, " \n\t\r");
+		user_comm[i] = token;
+		token = strtok(NULL, " \n\t\r");
 	}
 	user_comm[i] = NULL;
-			return (user_comm);
+	return (user_comm);
 }

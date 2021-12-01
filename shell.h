@@ -21,7 +21,7 @@ void _getenv(char **env);
 char **_get_token(char *lineptr);
 void _exit_command(char **args, char *lineptr, int _exit);
 int _frk_func(char **arg, char **av, char **env,
-char *lineptr, int np, int c);
+              char *lineptr, int np, int c);
 /** string functions **/
 int _strcmp(char *s1, char *s2);
 size_t _strncmp(char *s1, char *s2, size_t n);
